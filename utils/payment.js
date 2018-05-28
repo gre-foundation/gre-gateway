@@ -6,7 +6,7 @@ var provider = new providers.JsonRpcProvider(config.web3Provider, config.ethersN
 var rp = require('request-promise');
 var bluebird = require('bluebird');
 
-function PaymentUtils() {}
+
 
 module.exports.abi = abi = [
     {
@@ -116,6 +116,10 @@ module.exports.abi = abi = [
         "name": "Transfer",
         "type": "event"
     }];
+
+function PaymentUtils() {
+    this.abi = abi;
+}
 
 PaymentUtils.prototype.getBTCBalance = function(address){
     return new bluebird.Promise(function(resolve, reject){

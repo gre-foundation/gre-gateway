@@ -1,4 +1,5 @@
 var config = require('../../config');
+var database = require('../../db');
 var Web3 = require('web3');
 var web3 = new Web3(config.web3Provider);
 var ethers = require('ethers');
@@ -10,10 +11,13 @@ var aes = require('crypto-js/aes');
 var CryptoJS = require('crypto-js');
 var mongoose = require('mongoose');
 var Transaction = require('../../models/transaction');
-var PaymentUtils = require('../../utils/payment');
 var BitcoinUtils = require('../../utils/bitcoin');
 var bluebird = require('bluebird');
 var bitcore = require('bitcore-lib');
+var PaymentUtils = require('./../../utils/payment');
+var ethTx = require('ethereumjs-tx');
+var logger = require('../../api/v1/helpers/logHelper');
+var BigNumber = require('bignumber.js');
 
 function Payment() {
 }
@@ -36,7 +40,7 @@ Payment.prototype.ethPayment = function (amount, privateKey, concernedAddress, i
                 return wallet.estimateGas(transaction)
             })
             .then(function (gasEstimate) {
-                console.log(gasEstimate.toString());
+                logger.info(gasEstimate.toString());
                 transaction.gasLimit = gasEstimate;
                 if (isConcernedAddressHotWallet)
                     transaction.value = transaction.value - (gasEstimate * 10000000000);
@@ -76,51 +80,109 @@ Payment.prototype.ethPayment = function (amount, privateKey, concernedAddress, i
 };
 
 Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAddress, isWithdrawal, contractAddress, tokenDecimals) {
-    var wallet = new ethers.Wallet(aes.decrypt(privateKey, config.secretKey).toString(CryptoJS.enc.Utf8));
+    var desrypt = aes.decrypt(privateKey, config.secretKey).toString(CryptoJS.enc.Utf8);
+    var wallet = new ethers.Wallet(desrypt);
+    var fromPrivateKeyBuffer = new Buffer(desrypt.slice(2), 'hex');
     wallet.provider = provider;
-    console.log(toAddress);
     var availableBalance;
-    var erc20Tx = {
-        to: contractAddress
-    };
     var to = toAddress;
     return new bluebird.Promise(function (resolve, reject) {
         PaymentUtils.getERC20Balance(fromAddress)
             .then(function (balance) {
-                erc20Tx.gasLimit = 81000;
                 if (isWithdrawal) {
-                    availableBalance = (parseInt(amount) * Math.pow(10, tokenDecimals));
+                    availableBalance = (new BigNumber(amount).multipliedBy(new BigNumber(10).exponentiatedBy(tokenDecimals)));
                 }
                 else {
-                    availableBalance = (parseInt(balance));
+                    availableBalance = (new BigNumber(balance));
                 }
 
-                erc20Tx.data = String(PaymentUtils.createDataForTokenTransfer(to, availableBalance));
-                console.log(erc20Tx);
-                return wallet.sendTransaction(erc20Tx);
+                const myContract = new web3.eth.Contract(PaymentUtils.abi);
+                myContract.options.address = config.erc20.contractAddress;
+                myContract.options.from = "0x01964F5e336735e7cfC8A613b5e3991cc587D834";
+                let data2 = myContract.methods.transferFrom(fromAddress, to, availableBalance).encodeABI();
+
+                return new bluebird.Promise(function (resolve2, reject2) {
+                    web3.eth.getGasPrice().then(function (gasPrice) {
+                        web3.eth.getTransactionCount("0x01964F5e336735e7cfC8A613b5e3991cc587D834", (err, count) => {
+                            if (err) return;
+                            const txData2 = {
+                                chainId: 1,
+                                // gasPrice: web3.utils.toHex(42000000000),
+                                gasPrice: web3.utils.toHex(gasPrice),
+                                gasLimit: web3.utils.toHex(81000),
+                                to: config.erc20.contractAddress,
+                                from: "0x01964F5e336735e7cfC8A613b5e3991cc587D834",
+                                value: 0x0,
+                                nonce: web3.utils.toHex(count),
+                                data: data2
+                            };
+                            var tx2 = new ethTx(txData2);
+                            tx2.sign(fromPrivateKeyBuffer);
+                            var serializedTx2 = tx2.serialize().toString("hex");
+                            if (!serializedTx2) {
+                                throw new Error('tx2.serialize fail.');
+                            } else {
+                                var tran = web3.eth.sendSignedTransaction('0x' + serializedTx2);
+
+                                tran.on('confirmation', (confirmationNumber, receipt) => {
+                                    logger.info('confirmation: ' + confirmationNumber);
+                                });
+
+                                tran.on('transactionHash', hash => {
+                                    logger.info('hash');
+                                    logger.info(hash);
+                                    resolve2({
+                                        hash: hash
+                                    })
+                                });
+
+                                tran.on('receipt', receipt => {
+                                    logger.info('reciept');
+                                    logger.info(receipt);
+                                });
+
+                                tran.on('error', function (err) {
+                                    reject2(err);
+                                });
+                            }
+                        });
+                    });
+                });
             })
             .then(function (transaction) {
-                var tx = new Transaction();
-                tx.Wallet = fromAddress;
-                tx.Currency = "ERC20";
-                tx.ConcernedAddress = toAddress;
-                tx.Amount = availableBalance;
-                tx.Merchant = config.merchant.merchantId;
-                tx.Hash = transaction.hash;
-                tx.Timestamp = parseInt(Date.now() / 1000);
-                tx.Extra = transaction;
-                return tx.save();
+                return database('localhost', 'main').then(function (db) {
+                    return new Promise(function (resolve1, reject1) {
+                        var tx = {};
+                        tx.wallet = fromAddress;
+                        tx.currency = "ERC20";
+                        tx.concerned_address = toAddress;
+                        tx.amount = availableBalance.toString();
+                        tx.merchant = config.merchant.merchantId;
+                        tx.k_hash = transaction.hash;
+                        tx.k_timestamp = parseInt(Date.now() / 1000);
+                        tx.extra = transaction;
+                        db.models.gateway_transaction.create(tx, function (err, item) {
+                            if (err) {
+                                reject1(err);
+                            } else {
+                                resolve1(tx);
+                            }
+                        })
+                    });
+                });
             })
             .then(function (tx) {
+                logger.info(tx);
                 if (isWithdrawal) {
                     // return tx.Extra
-                    return provider.waitForTransaction(tx.Hash);
+                    return provider.waitForTransaction(tx.k_hash);
                 }
                 else {
-                    return provider.waitForTransaction(tx.Hash);
+                    return provider.waitForTransaction(tx.k_hash);
                 }
             })
             .then(function (transaction) {
+                logger.info(transaction);
                 resolve(transaction);
             })
             .catch(function (error) {
@@ -138,7 +200,6 @@ Payment.prototype.btcPayment = function (amount, privateKey, fromAddress, toAddr
     else {
         sourceAddress = privKey.toAddress(bitcore.Networks.livenet);
     }
-    console.log(sourceAddress);
     return new bluebird.Promise(function (resolve, reject) {
         BitcoinUtils.getUtxos(sourceAddress.toString())
             .then(function (utxos) {

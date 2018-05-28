@@ -5,8 +5,9 @@ var auth = require('./middleware/auth');
 var invoiceController = require('./controllers/invoiceController');
 var hotWalletController = require('./controllers/hotWalletController');
 var dashboardController = require('./controllers/dashboardController');
+var accountController = require('./controllers/accountController');
 
-router.use(auth.auth);
+// router.use(auth.auth);
 // invoice routes
 router.post('/invoice/btc', invoiceController.generateBtcInvoice);
 router.post('/invoice/eth', invoiceController.generateEthInvoice);
@@ -22,6 +23,9 @@ router.get('/balance/erc20/addr/:address', hotWalletController.erc20Balance);
 router.post('/withdraw/btc', hotWalletController.btcWithdraw);
 router.post('/withdraw/eth', hotWalletController.ethWithdraw);
 router.post('/withdraw/erc20', hotWalletController.erc20Withdraw);
+
+// account routes
+router.post('/account/create', accountController.create);
 
 // dashboard routes
 router.get('/dashboard/allInvoice', dashboardController.allInvoices);

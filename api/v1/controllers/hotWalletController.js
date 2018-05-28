@@ -7,12 +7,13 @@ var utils = ethers.utils;
 var Erc20Withdrawal = require('./../../../models/erc20Withdrawal');
 var EthWithdrawal = require('./../../../models/ethWithdrawal');
 
-function Controller() {}
+function Controller() {
+}
 
-Controller.prototype.btcBalance = function(req, res){
+Controller.prototype.btcBalance = function (req, res) {
     var address = req.params.address.toString();
     PaymentUtils.getBTCBalance(address)
-        .then(function(response){
+        .then(function (response) {
             res.status(200).json({
                 "success": true,
                 "address": address,
@@ -20,7 +21,7 @@ Controller.prototype.btcBalance = function(req, res){
                 "balanceSat": response['balanceSat'].toString()
             });
         })
-        .catch(function(error){
+        .catch(function (error) {
             res.status(400).json({
                 "success": false,
                 "message": error
@@ -28,12 +29,12 @@ Controller.prototype.btcBalance = function(req, res){
         })
 };
 
-Controller.prototype.ethBalance = function(req, res){
+Controller.prototype.ethBalance = function (req, res) {
     var address = req.params.address.toString();
     console.log(address);
-    if(web3.utils.isAddress(address)){
+    if (web3.utils.isAddress(address)) {
         PaymentUtils.getEtherBalance(address)
-            .then(function(balance){
+            .then(function (balance) {
                 console.log(balance);
                 res.status(200).json({
                     "success": true,
@@ -42,7 +43,7 @@ Controller.prototype.ethBalance = function(req, res){
                 });
             })
     }
-    else{
+    else {
         res.status(400).json({
             "success": false,
             "message": "invalid ethereum address"
@@ -50,12 +51,12 @@ Controller.prototype.ethBalance = function(req, res){
     }
 };
 
-Controller.prototype.erc20Balance = function(req, res){
+Controller.prototype.erc20Balance = function (req, res) {
     var address = req.params.address;
     console.log(address);
-    if(web3.utils.isAddress(address)){
+    if (web3.utils.isAddress(address)) {
         PaymentUtils.getERC20Balance(address)
-            .then(function(balance){
+            .then(function (balance) {
                 res.status(200).json({
                     "success": true,
                     "address": address,
@@ -63,7 +64,7 @@ Controller.prototype.erc20Balance = function(req, res){
                 });
             })
     }
-    else{
+    else {
         res.status(400).json({
             "success": false,
             "message": "invalid erc20 address"
@@ -72,17 +73,17 @@ Controller.prototype.erc20Balance = function(req, res){
 
 };
 
-Controller.prototype.btcWithdraw = function(req, res){
+Controller.prototype.btcWithdraw = function (req, res) {
     var amount = req.body.amount;
     var withdrawalAddress = req.body.withdrawalAddress;
-    if(parseFloat(amount) <= 0 || isNaN(amount)){
+    if (parseFloat(amount) <= 0 || isNaN(amount)) {
         res.status(400).json({
             "success": false,
             "message": "valid amount is required"
         });
     }
     Payment.btcPayment(parseInt(amount), config.btcHotWalletKey, config.btcHotWalletAddress, withdrawalAddress, true)
-        .then(function(tx){
+        .then(function (tx) {
             res.status(200).json({
                 "success": true,
                 "tx": tx
@@ -90,34 +91,32 @@ Controller.prototype.btcWithdraw = function(req, res){
         })
 };
 
-Controller.prototype.ethWithdraw = function(req, res){
+Controller.prototype.ethWithdraw = function (req, res) {
     var amount = req.body.amount;
     var withdrawalAddress = req.body.withdrawalAddress;
-    if(parseFloat(amount) <= 0 || isNaN(amount)){
+    if (parseFloat(amount) <= 0 || isNaN(amount)) {
         res.status(400).json({
             "success": false,
             "message": "valid amount is required"
         });
     }
-    if(web3.utils.isAddress(withdrawalAddress)){
-        var ethWithdrawal = new EthWithdrawal();
-        ethWithdrawal.Amount = amount;
-        ethWithdrawal.WithdrawalAddress = withdrawalAddress;
-        ethWithdrawal.Timestamp = parseInt(Date.now() / 1000);
-        ethWithdrawal.save()
-            .then(function(savedWithdrawRequest){
-                console.log(savedWithdrawRequest);
+    if (web3.utils.isAddress(withdrawalAddress)) {
+        req.models.eth_withdrawal.create({
+            amount: amount,
+            withdrawal_address: withdrawalAddress,
+            timestamp: parseInt(Date.now() / 1000)
+        }, function (err, item) {
+            if (err) {
+                res.status(400).json(err);
+            } else {
                 res.status(200).json({
-                    "requestId": savedWithdrawRequest._id,
-                    "withdrawalAddress": savedWithdrawRequest.WithdrawalAddress,
-                    "amount": savedWithdrawRequest.Amount
+                    "requestId": item.id,
+                    "withdrawalAddress": item.withdrawal_address,
+                    "amount": item.amount
                 });
-            })
-            .catch(function(error){
-                res.status(400).json(error)
-            })
-    }
-    else{
+            }
+        });
+    } else {
         res.status(400).json({
             "success": false,
             "message": "invalid withdrawal address"
@@ -125,34 +124,34 @@ Controller.prototype.ethWithdraw = function(req, res){
     }
 };
 
-Controller.prototype.erc20Withdraw = function(req, res){
+Controller.prototype.erc20Withdraw = function (req, res) {
     var amount = req.body.amount;
     var withdrawalAddress = req.body.withdrawalAddress;
-    if(parseFloat(amount) <= 0 || isNaN(amount)){
+    if (parseFloat(amount) <= 0 || isNaN(amount)) {
         res.status(400).json({
             "success": false,
             "message": "valid amount is required"
         });
     }
-    if(web3.utils.isAddress(withdrawalAddress)){
-        var erc20Withdrawal = new Erc20Withdrawal();
-        erc20Withdrawal.Amount = amount;
-        erc20Withdrawal.WithdrawalAddress = withdrawalAddress;
-        erc20Withdrawal.Timestamp = parseInt(Date.now() / 1000);
-        erc20Withdrawal.save()
-            .then(function(savedWithdrawRequest){
-                console.log(savedWithdrawRequest);
+    if (web3.utils.isAddress(withdrawalAddress)) {
+        req.models.erc20_withdrawal.create({
+            amount: amount,
+            withdrawal_address: withdrawalAddress,
+            k_timestamp: parseInt(Date.now() / 1000),
+            status: 1,
+        }, function (err, item) {
+            if (err) {
+                res.status(400).json(err);
+            } else {
                 res.status(200).json({
-                    "requestId": savedWithdrawRequest._id,
-                    "withdrawalAddress": savedWithdrawRequest.WithdrawalAddress,
-                    "amount": savedWithdrawRequest.Amount
+                    "success": true,
+                    "request_id": item.id,
+                    "withdrawal_address": item.withdrawal_address,
+                    "amount": item.amount
                 });
-            })
-            .catch(function(error){
-                res.status(400).json(error)
-            })
-    }
-    else{
+            }
+        });
+    } else {
         res.status(400).json({
             "success": false,
             "message": "invalid withdrawal address"
