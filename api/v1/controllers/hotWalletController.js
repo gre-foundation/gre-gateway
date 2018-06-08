@@ -63,15 +63,21 @@ Controller.prototype.erc20Balance = function (req, res) {
                     "balance": parseFloat(balance) / Math.pow(10, config.erc20.decimal)
                 });
             })
-    }
-    else {
+            .catch(function (err) {
+                res.status(400).json({
+                    "success": false,
+                    "message": err,
+                });
+            })
+    } else {
         res.status(400).json({
             "success": false,
             "message": "invalid erc20 address"
         });
     }
 
-};
+}
+;
 
 Controller.prototype.btcWithdraw = function (req, res) {
     var amount = req.body.amount;

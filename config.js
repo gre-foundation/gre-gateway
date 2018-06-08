@@ -97,7 +97,7 @@ var config = {
         'btcHotWalletKey': process.env.BTC_HOT_WALLET_KEY || '',
         'ethHotWalletAddress': process.env.ETH_HOT_WALLET_ADDRESS || '',// required
         'ethHotWalletKey': process.env.ETH_HOT_WALLET_KEY, // 转存S3
-        'web3Provider': 'http://52.221.98.227:8545',
+        'web3Provider': 'http://internal-gre-eth-lb-195930554.ap-northeast-2.elb.amazonaws.com:8545',
         'ethersNetwork': require('ethers').providers.networks.homestead
     }
 };
