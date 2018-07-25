@@ -48,7 +48,7 @@ var config = {
         'ethPreviousBlock': 0,
         'erc20WithdrawalKey': '',  // 转存S3
         'erc20WithdrawalWallet': '0xAFD131aB3D89ce17B1EC5236421f0C145C030192',
-        'web3Provider': 'http://52.221.98.227:8545',
+        'web3Provider': 'http://13.124.179.153:8545',
         'ethersNetwork': require('ethers').providers.networks.ropsten
     },
     'production': {

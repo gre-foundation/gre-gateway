@@ -79,7 +79,7 @@ Payment.prototype.ethPayment = function (amount, privateKey, concernedAddress, i
 
 };
 
-Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAddress, isWithdrawal, contractAddress, tokenDecimals) {
+Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAddress, isWithdrawal, contractAddress, tokenDecimals, trans) {
     var desrypt = aes.decrypt(privateKey, config.secretKey).toString(CryptoJS.enc.Utf8);
     var wallet = new ethers.Wallet(desrypt);
     var fromPrivateKeyBuffer = new Buffer(desrypt.slice(2), 'hex');
@@ -108,12 +108,12 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
                             const txData2 = {
                                 chainId: 1,
                                 // gasPrice: web3.utils.toHex(42000000000),
-                                gasPrice: web3.utils.toHex(gasPrice),
+                                gasPrice: web3.utils.toHex(gasPrice * 2),
                                 gasLimit: web3.utils.toHex(81000),
                                 to: config.erc20.contractAddress,
                                 from: "0x01964F5e336735e7cfC8A613b5e3991cc587D834",
                                 value: 0x0,
-                                nonce: web3.utils.toHex(count),
+                                nonce: web3.utils.toHex(count + trans.id),
                                 data: data2
                             };
                             var tx2 = new ethTx(txData2);
@@ -152,22 +152,24 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
             .then(function (transaction) {
                 return database('localhost', 'main').then(function (db) {
                     return new Promise(function (resolve1, reject1) {
-                        var tx = {};
-                        tx.wallet = fromAddress;
-                        tx.currency = "ERC20";
-                        tx.concerned_address = toAddress;
-                        tx.amount = availableBalance.toString();
-                        tx.merchant = config.merchant.merchantId;
-                        tx.k_hash = transaction.hash;
-                        tx.k_timestamp = parseInt(Date.now() / 1000);
-                        tx.extra = transaction;
-                        db.models.gateway_transaction.create(tx, function (err, item) {
-                            if (err) {
-                                reject1(err);
-                            } else {
-                                resolve1(tx);
-                            }
-                        })
+                        db.models.gateway_transaction.getAsync(trans.id)
+                            .then(function (tx) {
+                                tx.wallet = fromAddress;
+                                tx.currency = "ERC20";
+                                tx.concerned_address = toAddress;
+                                tx.amount = availableBalance.toString();
+                                tx.merchant = config.merchant.merchantId;
+                                tx.k_hash = transaction.hash;
+                                tx.k_timestamp = parseInt(Date.now() / 1000);
+                                tx.extra = transaction;
+                                tx.save(function (error) {
+                                    if (error) {
+                                        reject1(error);
+                                    } else {
+                                        resolve1(tx);
+                                    }
+                                })
+                            })
                     });
                 });
             })
@@ -182,8 +184,10 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
                 }
             })
             .then(function (transaction) {
-                logger.info(transaction);
-                resolve(transaction);
+                let transactionReceipt = web3.eth.getTransactionReceipt(transaction.hash);
+                transactionReceipt.then(data => {
+                    resolve(data);
+                });
             })
             .catch(function (error) {
                 reject(error);
