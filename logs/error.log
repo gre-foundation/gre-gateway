@@ -932,3 +932,462 @@
   label: 'payment-gateway',
   timestamp: '2018-05-21T11:14:50.491Z',
   [Symbol(level)]: 'error' }
+{ Error: invalid json response
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:563:33)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at exports.XMLHttpRequest.handleError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:532:5)
+    at ClientRequest.errorHandler (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:459:14)
+    at ClientRequest.emit (events.js:127:13)
+    at ClientRequest.emit (domain.js:421:20)
+    at Socket.socketErrorListener (_http_client.js:394:9)
+    at Socket.emit (events.js:127:13)
+    at Socket.emit (domain.js:421:20)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  orginialError: SyntaxError: Unexpected token E in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:561:35)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at exports.XMLHttpRequest.handleError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:532:5)
+    at ClientRequest.errorHandler (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:459:14)
+    at ClientRequest.emit (events.js:127:13)
+    at ClientRequest.emit (domain.js:421:20)
+    at Socket.socketErrorListener (_http_client.js:394:9)
+    at Socket.emit (events.js:127:13)
+    at Socket.emit (domain.js:421:20)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:152:19),
+  responseText: 'Error: connect ECONNREFUSED 13.124.179.153:8545\n    at Object._errnoException (util.js:1003:13)\n    at _exceptionWithHostPort (util.js:1024:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1181:14)',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-13T03:27:56.548Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: type is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:175:72
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-13T09:44:29.104Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid sender
+    at getResult (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/json-rpc-provider.js:28:21)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:572:30)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:447:13)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  code: -32000,
+  data: undefined,
+  url: 'http://13.124.179.153:8545',
+  body: '{"method":"eth_sendRawTransaction","params":["0xf8aa8085016281f40083013c68946f259637dcd74c767781e37bc6133cd6a68aa16180b844a9059cbb000000000000000000000000ed40c55baaa747b6b62886a05b81b8a6a8745e4100000000000000000000000000000000000000000000000000000000000000002aa0e09cda871625e78e3b9aa253e658d920984f9999a06ae2c17618513678a1abbaa003d3bb9a267d105d909649b7d7637a0c4e29735c9265e5cbd9ed2039155ba1cf"],"id":42,"jsonrpc":"2.0"}',
+  responseText: '{"jsonrpc":"2.0","id":42,"error":{"code":-32000,"message":"invalid sender"}}\n',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:15:09.040Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid sender
+    at getResult (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/json-rpc-provider.js:28:21)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:572:30)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:447:13)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  code: -32000,
+  data: undefined,
+  url: 'http://13.124.179.153:8545',
+  body: '{"method":"eth_sendRawTransaction","params":["0xf8a980850165a0bc0083013c68946f259637dcd74c767781e37bc6133cd6a68aa16180b844a9059cbb000000000000000000000000ed40c55baaa747b6b62886a05b81b8a6a8745e4100000000000000000000000000000000000000000000000000000000000000002aa0f72b97d537e15e52b8a47f8f4d134912006004d3db786e8ab24d2eb7c3f776eb9f0155d6695cfcc9eb7c28245a832c30363305ee85ae5a2c56e72767f750ba0c"],"id":42,"jsonrpc":"2.0"}',
+  responseText: '{"jsonrpc":"2.0","id":42,"error":{"code":-32000,"message":"invalid sender"}}\n',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:17:24.081Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid sender
+    at getResult (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/json-rpc-provider.js:28:21)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:572:30)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:447:13)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  code: -32000,
+  data: undefined,
+  url: 'http://13.124.179.153:8545',
+  body: '{"method":"eth_sendRawTransaction","params":["0xf8aa80850165a0bc0083013c6894ed40c55baaa747b6b62886a05b81b8a6a8745e4180b844a9059cbb000000000000000000000000ed40c55baaa747b6b62886a05b81b8a6a8745e4100000000000000000000000000000000000000000000000000000000000000002aa033655772495387cf9ae8739065fcf18930cda06cd7e61410b114c9e8b1a69371a0450fc214fa3e298eac562015436d5ffeb3cfb32d608f4b2e9a22d15d2512d8c1"],"id":42,"jsonrpc":"2.0"}',
+  responseText: '{"jsonrpc":"2.0","id":42,"error":{"code":-32000,"message":"invalid sender"}}\n',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:23:37.446Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:27:31.794Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:28:45.334Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:29:17.018Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:29:36.511Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:30:04.886Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:96:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:31:21.886Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:32:07.565Z',
+  [Symbol(level)]: 'error' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:96:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:33:03.024Z',
+  [Symbol(level)]: 'error' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:42:07.048Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:153:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:93:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:20:04.391Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:153:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:93:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:20:44.397Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:153:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:95:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:21:28.323Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:156:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:95:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:27.722Z',
+  [Symbol(level)]: 'error' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:160:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:95:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:57.834Z',
+  [Symbol(level)]: 'error' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:46.791Z',
+  [Symbol(level)]: 'error' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:29:33.205Z',
+  [Symbol(level)]: 'error' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:29.425Z',
+  [Symbol(level)]: 'error' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:29.425Z',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{ Error: Returned error: insufficient funds for gas * price + value\n    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)\n    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36\n    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)\n    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)\n    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)\n    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)\n    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)\n    at IncomingMessage.emit (events.js:132:15)\n    at IncomingMessage.emit (domain.js:421:20)\n    at endReadableNT (_stream_readable.js:1101:12)\n    at process._tickCallback (internal/process/next_tick.js:152:19)\n  level: \'error\',\n  label: \'payment-gateway\',\n  timestamp: \'2018-08-17T07:30:29.425Z\',\n  [Symbol(level)]: \'error\' }' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:29.425Z',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{ Error: Returned error: insufficient funds for gas * price + value\n    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)\n    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36\n    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)\n    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)\n    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)\n    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)\n    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)\n    at IncomingMessage.emit (events.js:132:15)\n    at IncomingMessage.emit (domain.js:421:20)\n    at endReadableNT (_stream_readable.js:1101:12)\n    at process._tickCallback (internal/process/next_tick.js:152:19)\n  level: \'error\',\n  label: \'payment-gateway\',\n  timestamp: \'2018-08-17T07:30:29.425Z\',\n  [Symbol(level)]: \'error\',\n  [Symbol(message)]: \'{ Error: Returned error: insufficient funds for gas * price + value\\n    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)\\n    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36\\n    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)\\n    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)\\n    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)\\n    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)\\n    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)\\n    at IncomingMessage.emit (events.js:132:15)\\n    at IncomingMessage.emit (domain.js:421:20)\\n    at endReadableNT (_stream_readable.js:1101:12)\\n    at process._tickCallback (internal/process/next_tick.js:152:19)\\n  level: \\\'error\\\',\\n  label: \\\'payment-gateway\\\',\\n  timestamp: \\\'2018-08-17T07:30:29.425Z\\\',\\n  [Symbol(level)]: \\\'error\\\' }\' }' }

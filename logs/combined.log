@@ -1365,3 +1365,1613 @@
   label: 'payment-gateway',
   timestamp: '2018-07-24T02:25:44.957Z',
   [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T04:29:35.128Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T04:46:28.642Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T04:47:37.219Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T04:49:48.938Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T04:52:13.056Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T04:54:06.789Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T04:55:59.870Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:06:00.166Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:09:00.042Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:13:55.246Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:15:24.164Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:15:57.123Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:16:50.804Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:17:16.072Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:17:50.713Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:19:31.871Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:20:43.042Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-08T06:41:24.900Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid json response
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:563:33)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at exports.XMLHttpRequest.handleError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:532:5)
+    at ClientRequest.errorHandler (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:459:14)
+    at ClientRequest.emit (events.js:127:13)
+    at ClientRequest.emit (domain.js:421:20)
+    at Socket.socketErrorListener (_http_client.js:394:9)
+    at Socket.emit (events.js:127:13)
+    at Socket.emit (domain.js:421:20)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  orginialError: SyntaxError: Unexpected token E in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:561:35)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at exports.XMLHttpRequest.handleError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:532:5)
+    at ClientRequest.errorHandler (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:459:14)
+    at ClientRequest.emit (events.js:127:13)
+    at ClientRequest.emit (domain.js:421:20)
+    at Socket.socketErrorListener (_http_client.js:394:9)
+    at Socket.emit (events.js:127:13)
+    at Socket.emit (domain.js:421:20)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:152:19),
+  responseText: 'Error: connect ECONNREFUSED 13.124.179.153:8545\n    at Object._errnoException (util.js:1003:13)\n    at _exceptionWithHostPort (util.js:1024:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1181:14)',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-13T03:27:56.548Z',
+  [Symbol(level)]: 'error' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-13T03:42:30.291Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x7b3d45d892b74155479bfeaf858b821e190e496047a9e6d0069ca8d8a0f88645',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-13T03:42:30.295Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { id: [Getter/Setter],
+     wallet: [Getter/Setter],
+     currency: [Getter/Setter],
+     token_type: [Getter/Setter],
+     concerned_address: [Getter/Setter],
+     amount: [Getter/Setter],
+     merchant: [Getter/Setter],
+     k_hash: [Getter/Setter],
+     k_timestamp: [Getter/Setter],
+     extra: [Getter/Setter] },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-13T03:42:30.303Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: type is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:175:72
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-13T09:44:29.104Z',
+  [Symbol(level)]: 'error' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T07:28:08.272Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T07:34:23.183Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { '0': '.1',
+     '1': 'HT',
+     '2': 'U2FsdGVkX1+sD1fHLIxiYxFs3VAVyF1BK29lseAiVaV3ec83XNV0VqjSzj1W7kBKphekv+cVHZillevrMspNlZzMuDNlicKKd/LYMpAbmjMozFevtPF3LwBr1AvILwFk',
+     '3': '0x857FB63d11Ea0400B69D706dAF4968d696E02b1b',
+     '4': '0xeD40c55baaA747b6B62886a05B81b8a6A8745E41',
+     '5': true,
+     '6': 18,
+     '7': 
+      { id: [Getter/Setter],
+        wallet: [Getter/Setter],
+        currency: [Getter/Setter],
+        token_type: [Getter/Setter],
+        concerned_address: [Getter/Setter],
+        amount: [Getter/Setter],
+        merchant: [Getter/Setter],
+        k_hash: [Getter/Setter],
+        k_timestamp: [Getter/Setter],
+        extra: [Getter/Setter] } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:15:07.167Z',
+  [Symbol(level)]: 'info' }
+{ message: 'start transaction',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:15:07.176Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid sender
+    at getResult (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/json-rpc-provider.js:28:21)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:572:30)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:447:13)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  code: -32000,
+  data: undefined,
+  url: 'http://13.124.179.153:8545',
+  body: '{"method":"eth_sendRawTransaction","params":["0xf8aa8085016281f40083013c68946f259637dcd74c767781e37bc6133cd6a68aa16180b844a9059cbb000000000000000000000000ed40c55baaa747b6b62886a05b81b8a6a8745e4100000000000000000000000000000000000000000000000000000000000000002aa0e09cda871625e78e3b9aa253e658d920984f9999a06ae2c17618513678a1abbaa003d3bb9a267d105d909649b7d7637a0c4e29735c9265e5cbd9ed2039155ba1cf"],"id":42,"jsonrpc":"2.0"}',
+  responseText: '{"jsonrpc":"2.0","id":42,"error":{"code":-32000,"message":"invalid sender"}}\n',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:15:09.040Z',
+  [Symbol(level)]: 'error' }
+{ message: 
+   { jsonrpc: '2.0',
+     id: 42,
+     error: { code: -32000, message: 'invalid sender' } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:15:09.041Z',
+  [Symbol(level)]: 'info' }
+{ message: 'rollback 3 success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:15:09.045Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { '0': '.1',
+     '1': 'HT',
+     '2': 'U2FsdGVkX1+f9tZg0S5M7uGTF+Lk3eZRwj6633uBRYwlJGcbVFZjmXfsBicgC4MBvmcdcf8aJXWvLoZRZVAzilLUc7UIRF8ysD0w1qaaaMwobl3qTZMZhkgcoEg36TGM',
+     '3': '0x857FB63d11Ea0400B69D706dAF4968d696E02b1b',
+     '4': '0xeD40c55baaA747b6B62886a05B81b8a6A8745E41',
+     '5': true,
+     '6': 18,
+     '7': 
+      { id: [Getter/Setter],
+        wallet: [Getter/Setter],
+        currency: [Getter/Setter],
+        token_type: [Getter/Setter],
+        concerned_address: [Getter/Setter],
+        amount: [Getter/Setter],
+        merchant: [Getter/Setter],
+        k_hash: [Getter/Setter],
+        k_timestamp: [Getter/Setter],
+        extra: [Getter/Setter] } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:17:22.928Z',
+  [Symbol(level)]: 'info' }
+{ message: 'start transaction',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:17:22.938Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid sender
+    at getResult (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/json-rpc-provider.js:28:21)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:572:30)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:447:13)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  code: -32000,
+  data: undefined,
+  url: 'http://13.124.179.153:8545',
+  body: '{"method":"eth_sendRawTransaction","params":["0xf8a980850165a0bc0083013c68946f259637dcd74c767781e37bc6133cd6a68aa16180b844a9059cbb000000000000000000000000ed40c55baaa747b6b62886a05b81b8a6a8745e4100000000000000000000000000000000000000000000000000000000000000002aa0f72b97d537e15e52b8a47f8f4d134912006004d3db786e8ab24d2eb7c3f776eb9f0155d6695cfcc9eb7c28245a832c30363305ee85ae5a2c56e72767f750ba0c"],"id":42,"jsonrpc":"2.0"}',
+  responseText: '{"jsonrpc":"2.0","id":42,"error":{"code":-32000,"message":"invalid sender"}}\n',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:17:24.081Z',
+  [Symbol(level)]: 'error' }
+{ message: 
+   { jsonrpc: '2.0',
+     id: 42,
+     error: { code: -32000, message: 'invalid sender' } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:17:24.081Z',
+  [Symbol(level)]: 'info' }
+{ message: 'rollback 3 success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:17:24.085Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+hXlndY4P/VYACsmgwTBZo7iz6En5388Fi8xY4l0AJlhS+R/5FaDwYysfQQP7yd62LsHuxSaE9RgVIocYSw8lubeFoCASz3yIEdy7IEpDRCUihE/5PDsKb","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":31,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:23:36.370Z',
+  [Symbol(level)]: 'info' }
+{ message: 'start transaction',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:23:36.379Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid sender
+    at getResult (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/json-rpc-provider.js:28:21)
+    at exports.XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-providers/provider.js:572:30)
+    at exports.XMLHttpRequest.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:591:25)
+    at setState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:610:14)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xmlhttprequest/lib/XMLHttpRequest.js:447:13)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  code: -32000,
+  data: undefined,
+  url: 'http://13.124.179.153:8545',
+  body: '{"method":"eth_sendRawTransaction","params":["0xf8aa80850165a0bc0083013c6894ed40c55baaa747b6b62886a05b81b8a6a8745e4180b844a9059cbb000000000000000000000000ed40c55baaa747b6b62886a05b81b8a6a8745e4100000000000000000000000000000000000000000000000000000000000000002aa033655772495387cf9ae8739065fcf18930cda06cd7e61410b114c9e8b1a69371a0450fc214fa3e298eac562015436d5ffeb3cfb32d608f4b2e9a22d15d2512d8c1"],"id":42,"jsonrpc":"2.0"}',
+  responseText: '{"jsonrpc":"2.0","id":42,"error":{"code":-32000,"message":"invalid sender"}}\n',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:23:37.446Z',
+  [Symbol(level)]: 'error' }
+{ message: 
+   { jsonrpc: '2.0',
+     id: 42,
+     error: { code: -32000, message: 'invalid sender' } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:23:37.446Z',
+  [Symbol(level)]: 'info' }
+{ message: 'rollback 3 success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-15T08:23:37.450Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19PTEYsoK4/I2M7vIG3LHkFM+SZxm7LPbkogZXTQRxzLeuM1LoXbPjdLgPIEBK2fSQrLDDCiAjN3qhW9+UyAx8yjjqrnauR4ztSQgqwuhDrjyUEROqaRVVK","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":32,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:27:31.459Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:27:31.794Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+9SfZ/mYz3zssTlc/a3Wixe+cr57hRASfQ7QkNNFeKvaPG9u0+Y2tEKvuecHkjngwrnj47aQYyd6m9zUs98TxCNQLeiZkj+biGjx/eOjVM/Aci3+KXaxTl","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":33,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:28:44.904Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:28:45.334Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19ufT6GZ4P+vFsqvzd7Nsgzw8gh5KTmuM25W1kOS2JA/IYBSHEbK2ypLO2qPopkmnC28AQgXXZKH/tjKWBbCMt3icC+o4wVKn+xZ2FOYCHRBkfWhVZsBfRx","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":34,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:29:16.607Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:29:17.018Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+Uihasns946szzBNq4P7qIz+eQuZUimooFJSevd5RmuhzGjv+3EQHLLBZXL5Iu+sMLgcmZfx+ZhLwpV+Akhq1OJPM8qWgZfJ3z0lN3l0Li4VYG7ZbkalpH","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":35,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:29:36.083Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:29:36.511Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19T9dWWRP+itGvU3dpcLL+BEKOL8jjvooKLFiFduqTeY782nXMcxl+Swfw68liuz4OOeXH8ollPPY+PeOKo2+ol5asSmgIZAFpYhJdRfVCXyoSla0svNHw4","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":36,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:30:04.580Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:30:04.886Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+v5GxCZjCxh+z9vgy4djxU+RLDggZiHGXUqVqZ3PRo/+6KCVigHOADnCAIYhhD4bsO4DWPm+ofryx3LokpXPZ2D86h9YYPZsilE03OXdCy0f1QzhpJFxFE","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":37,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:31:21.601Z',
+  [Symbol(level)]: 'info' }
+{ message: 'start',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:31:21.612Z',
+  [Symbol(level)]: 'info' }
+{ message: 'start',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:31:21.612Z',
+  [Symbol(level)]: 'info' }
+{ message: [ BigNumber { _bn: <BN: 0> } ],
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:31:21.882Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:96:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:31:21.886Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX18y/6nWXK6akw6mdDA/y1MN5K2bhh486YG+UGYGjrZaV4w6II0nFvwgYyNn9nviAQEZEWWr0PwQ4w8hKffgjaYJ7CL4gJjvoiwLkN7u+3uJT6741hku+Hj6","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":38,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:32:07.092Z',
+  [Symbol(level)]: 'info' }
+{ message: [ BigNumber { _bn: <BN: 1bc16d674ec80000> } ],
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:32:07.562Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:32:07.565Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1/PTdBew7QbGQyS/Vuj6yPaxRTr5rlFuTi+INM6bZr6rAZKBGhQtUEF3UbPMrIiWQwnRKW51NOZgA6RG6MIOxRKLGdM4U5VlLwl/Wnn52w4xRsohnGN/m/I","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":39,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:33:02.540Z',
+  [Symbol(level)]: 'info' }
+{ message: [ BigNumber { _bn: <BN: 1bc16d674ec80000> } ],
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:33:03.020Z',
+  [Symbol(level)]: 'info' }
+{ message: [ BigNumber { _bn: <BN: 1bc16d674ec80000> } ],
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:33:03.022Z',
+  [Symbol(level)]: 'info' }
+{ message: [ BigNumber { _bn: <BN: 1bc16d674ec80000> } ],
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:33:03.023Z',
+  [Symbol(level)]: 'info' }
+{ ReferenceError: erc20Tx is not defined
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:96:17
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:33:03.024Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19Kx49ITv4CEPJl7iW6cvv7T1ZkO2J49Bcr3uGZTDJzI+F3l7j27K7E+bjnzm1NuSjle0kEXPQdcxYzxayWO4I58Z5ReFfGUSECkyON3xFMNgXAfejvZcvm","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":40,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:35:26.923Z',
+  [Symbol(level)]: 'info' }
+{ message: NaN,
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:35:27.366Z',
+  [Symbol(level)]: 'info' }
+{ message: '3300000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:35:27.714Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19iBAI4SeiOrZxm7MZBikP3T4kg/Kms5GGPZBH7cIUoqNE+Cn4BjgttHv6lUuXW/gao0uoDsL5x5u3RNpdBZRmx18UkdL217T3ItKdn4FXV+fuuN8mDrpBq","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":41,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:36:01.212Z',
+  [Symbol(level)]: 'info' }
+{ message: '.1',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:36:01.609Z',
+  [Symbol(level)]: 'info' }
+{ message: NaN,
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:36:01.609Z',
+  [Symbol(level)]: 'info' }
+{ message: '3100000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:36:01.952Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+UqcE1v0NQvi+cP6OHKunynaSVB/MNAAoj9yNj+BkHwHlZ59yk3bYeb94v/7kTKRLjwiT49FZom0eGLdnGdTbVwGzpVs5BoOcugC/G6LirPQnCBjfhiZIi","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":42,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:39:14.302Z',
+  [Symbol(level)]: 'info' }
+{ message: '.1',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:39:14.751Z',
+  [Symbol(level)]: 'info' }
+{ message: 100000000000000000,
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:39:14.752Z',
+  [Symbol(level)]: 'info' }
+{ message: '3500000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:39:15.160Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX184M1FiLGBdcOEO+eCWil0pi6oRRxTnLWT+uHRBhdFupzbfHMajyIFOyTA+xi4LBwzowlSaRuX9xoRl2E8J0gxyvD307Y3bgsCb+EOe8AqcDfpesOFffZLu","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":43,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:40:08.877Z',
+  [Symbol(level)]: 'info' }
+{ message: '.1',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:40:09.331Z',
+  [Symbol(level)]: 'info' }
+{ message: 100000000000000000,
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:40:09.332Z',
+  [Symbol(level)]: 'info' }
+{ message: '6000000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:40:09.730Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19UFmIeTfuQvzDz1HEbtaJsjaHfPKoJV05Q3x/QqDRXMwJDzHFYVLGCgjDeXh1qmi73zeNaqcNDmZHgeSxuKFDJjYuGwxrd2GJMtOR4FD5wXgCWDwMibqe6","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":44,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:42:05.386Z',
+  [Symbol(level)]: 'info' }
+{ message: '.1',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:42:05.859Z',
+  [Symbol(level)]: 'info' }
+{ message: '100000000000000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:42:05.859Z',
+  [Symbol(level)]: 'info' }
+{ message: '6000000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:42:06.268Z',
+  [Symbol(level)]: 'info' }
+{ message: '["0x2c","0x02cb417800","0x013c68","0xed40c55baaa747b6b62886a05b81b8a6a8745e41","0x016345785d8a0000","0x","0x25","0x57597b4923dce21c7f879ad69fcffc610e809b976554630f3ff120ced54841a4","0x6108bd2f9bd71896b8c2f94acbe17a037bf28348ee196f62df72c60f7ca0e885"]',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:42:06.682Z',
+  [Symbol(level)]: 'info' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-16T09:42:07.048Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19rNuH9OOF5qRHv7C0J8DNsVUsON4fBjpBxeXlY6qgFFZ8znjv+LggLsnmOA2WN0Ood/kVp/OTMsFMvHO5NL8qTtphu2CifX/n8uNzZoxgf5mRcmXgDJOuf","3":"","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":45,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:20:04.369Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:153:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:93:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:20:04.391Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1/VGpxLM/TuKo51mOvYaZVJxjssGj96xEmsK1fvQyQg2Hu+hf6bMGFofg6Ww6CSce113xUH+SMWtwi+aFi0gN9vm4xoOzIhc+6XwDkznmhBun37Yo6rSsVE","3":"","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":46,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:20:44.375Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:153:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:93:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:92:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:20:44.397Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19aZZontR8TU5LJokVg7X4sukJDNK0mVK1bdMZ7x+smbIxllNmLFM4W2eTHZ+n0JtIOz8CEEZQ7WtErtsEH31tOabNIIz6PQans4Y1XWZMfoN1t5FFtAH5E","3":"","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":47,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:21:28.303Z',
+  [Symbol(level)]: 'info' }
+{ message: '123123',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:21:28.311Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:153:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:95:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:21:28.323Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+hinN1bB+hJ4lmEwwOgWNlqv29AILuSKtD/TbBEhj1QjOkVmhly5O2fEi0cYDFRDOZ7R+CiiV2DyoHhF4IkT0t4/AnHcZKzKckuYahQVL5LnFJbgPsJIXo","3":"","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":48,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:27.693Z',
+  [Symbol(level)]: 'info' }
+{ message: '123123',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:27.703Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:156:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:95:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:27.722Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+TGhrVq8wP03qoNqjWwTLpLE7fS1Kuc4DJh3WJgIh4o5sGK83KKpzkpU6Vd8gN0vtEjMJkzxliKt3Z+iOE9T30S5ipvjw4kxODXbKkdvR4ipIkI86uo6mb","3":"","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":49,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:57.799Z',
+  [Symbol(level)]: 'info' }
+{ message: '123123',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:57.812Z',
+  [Symbol(level)]: 'info' }
+{ Error: invalid address
+    at throwError (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/throw-error.js:4:17)
+    at Object.getAddress (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-utils/address.js:109:9)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:187:42)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:284:59
+    at Array.forEach (<anonymous>)
+    at pack (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:283:12)
+    at Object.encode (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:433:20)
+    at Function.encodeParams (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:823:45)
+    at Interface.func (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/interface.js:639:59)
+    at Contract.balanceOf (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/ethers-contracts/contract.js:88:31)
+    at PaymentUtils.getERC20Balance (/Users/air/Documents/WebStorm/gre/payment-gateway/utils/payment.js:160:21)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:95:22
+    at Promise._execute (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/debuggability.js:303:9)
+    at Promise._resolveFromExecutor (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:483:18)
+    at new Promise (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/bluebird/js/release/promise.js:79:10)
+    at Payment.erc20Payment (/Users/air/Documents/WebStorm/gre/payment-gateway/modules/payment/payment.js:94:12)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/workers/erc20WithdrawalWorker.js:78:60
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:623:16
+    at saveInstanceExtra (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:345:22)
+    at finish (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:226:9)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:241:17
+    at runAfterSaveActions (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:147:5)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:239:15
+    at saveAssociations (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:340:14)
+    at next (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:237:11)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Instance.js:270:9
+    at Query._callback (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/orm/lib/Drivers/DML/mysql.js:238:14)
+    at Query.Sequence.end (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/mysql/lib/Connection.js:103:28)
+  input: '',
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:22:57.834Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX186OaFyMmundFQSV4+L1a8RgRYRY4lj5eE4nfkmXuViLlwdaWJH3HTU30R5/JzeIiBuY8pzIAwN9m7rR5gjH302Nbx7ceIy+p9mxcYTZTG88QhnMLrssRS4","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":50,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:44.903Z',
+  [Symbol(level)]: 'info' }
+{ message: '123123',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:44.914Z',
+  [Symbol(level)]: 'info' }
+{ message: [ BigNumber { _bn: <BN: 1bc16d674ec80000> } ],
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:45.361Z',
+  [Symbol(level)]: 'info' }
+{ message: '.1',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:45.365Z',
+  [Symbol(level)]: 'info' }
+{ message: '100000000000000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:45.365Z',
+  [Symbol(level)]: 'info' }
+{ message: '60000000000',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:45.770Z',
+  [Symbol(level)]: 'info' }
+{ message: '["0x32","0x1bf08eb000","0x013c68","0xed40c55baaa747b6b62886a05b81b8a6a8745e41","0x016345785d8a0000","0x","0x26","0x1e70123b2589a443159d54b6dda5598e1bcc6fb1c2f278f3185404a11fdd8453","0x4685c6f1694266775000e67c49d8ceed45d6de4d667f5ec09c5a501d668fd8dd"]',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:46.185Z',
+  [Symbol(level)]: 'info' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:24:46.791Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX19LfAicnsglRpZ8zV0MANzD4qOnn0NFM2HbuGKHKG618Up3XbU7/1Nuzg7QEGzNZm7HGfzKLnj2nd4chh8A5gPQlCTfK8gUSJfnxk9qwpGzQFlzLf4rKp/k","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":51,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:29:31.609Z',
+  [Symbol(level)]: 'info' }
+{ message: 'f86d33851bf08eb00083013c6894ed40c55baaa747b6b62886a05b81b8a6a8745e4188016345785d8a00008025a0a943b9b61e27666339cb9084489f38d34525d1b52fe5766d9498f0d9cb3c6fdca02633ce3872f99422293b5eecb66118240a25655830234436272ce1bfa42fca9f',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:29:32.903Z',
+  [Symbol(level)]: 'info' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:29:33.205Z',
+  [Symbol(level)]: 'error' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+593sBz1rMi+FE0uyqY1wm5YVhGoEAI5dV2w+zGgs+cH1xdDlj4nogYUOcjJe6ZGGCDHZWnCQPgUlBiAdfGP+iw2TGnyEtodR6yz2zCw14lclpv9bBG4Cn","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":52,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:27.727Z',
+  [Symbol(level)]: 'info' }
+{ message: 'f86d34851bf08eb00083013c6894ed40c55baaa747b6b62886a05b81b8a6a8745e4188016345785d8a00008026a053f9a8a40f50e2ee9996f7686be68bff5e91786330d807f0b6390f7786340293a06cebb22c70f091319b6febd4d1dcdfbac42de5f31419df7aa62a2c775bc07f49',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:29.017Z',
+  [Symbol(level)]: 'info' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:29.425Z',
+  [Symbol(level)]: 'error' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:29.425Z',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{ Error: Returned error: insufficient funds for gas * price + value\n    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)\n    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36\n    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)\n    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)\n    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)\n    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)\n    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)\n    at IncomingMessage.emit (events.js:132:15)\n    at IncomingMessage.emit (domain.js:421:20)\n    at endReadableNT (_stream_readable.js:1101:12)\n    at process._tickCallback (internal/process/next_tick.js:152:19)\n  level: \'error\',\n  label: \'payment-gateway\',\n  timestamp: \'2018-08-17T07:30:29.425Z\',\n  [Symbol(level)]: \'error\' }' }
+{ Error: Returned error: insufficient funds for gas * price + value
+    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)
+    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36
+    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)
+    at IncomingMessage.emit (events.js:132:15)
+    at IncomingMessage.emit (domain.js:421:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  level: 'error',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T07:30:29.425Z',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{ Error: Returned error: insufficient funds for gas * price + value\n    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)\n    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36\n    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)\n    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)\n    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)\n    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)\n    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)\n    at IncomingMessage.emit (events.js:132:15)\n    at IncomingMessage.emit (domain.js:421:20)\n    at endReadableNT (_stream_readable.js:1101:12)\n    at process._tickCallback (internal/process/next_tick.js:152:19)\n  level: \'error\',\n  label: \'payment-gateway\',\n  timestamp: \'2018-08-17T07:30:29.425Z\',\n  [Symbol(level)]: \'error\',\n  [Symbol(message)]: \'{ Error: Returned error: insufficient funds for gas * price + value\\n    at Object.ErrorResponse (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-helpers/src/errors.js:29:16)\\n    at /Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-core-requestmanager/src/index.js:140:36\\n    at XMLHttpRequest.request.onreadystatechange (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/web3-providers-http/src/index.js:77:13)\\n    at XMLHttpRequestEventTarget.dispatchEvent (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:64:18)\\n    at XMLHttpRequest._setReadyState (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:354:12)\\n    at XMLHttpRequest._onHttpResponseEnd (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:509:12)\\n    at IncomingMessage.<anonymous> (/Users/air/Documents/WebStorm/gre/payment-gateway/node_modules/xhr2/lib/xhr2.js:469:24)\\n    at IncomingMessage.emit (events.js:132:15)\\n    at IncomingMessage.emit (domain.js:421:20)\\n    at endReadableNT (_stream_readable.js:1101:12)\\n    at process._tickCallback (internal/process/next_tick.js:152:19)\\n  level: \\\'error\\\',\\n  label: \\\'payment-gateway\\\',\\n  timestamp: \\\'2018-08-17T07:30:29.425Z\\\',\\n  [Symbol(level)]: \\\'error\\\' }\' }' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX18smx6uzW7PoUcZfmG423GJ/Z26mte/mU8msBena041nHVm0RKYEvcjklQD45P3UhtJkhHnYXgP1MNYWDa2hm7EUhopAdZOlll/0MhqkePna5GDTgt/Sc4W","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":53,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:06:35.595Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { to: '0x6f259637dcD74C767781E37Bc6133cd6A68aa161',
+     data: '0xa9059cbb000000000000000000000000eD40c55baaA747b6B62886a05B81b8a6A8745E41000000000000000000000000000000000000000000000000016345785d8a0000' },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:06:35.928Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { jsonrpc: '2.0',
+     id: 42,
+     error: { code: -32000, message: 'invalid sender' } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:06:36.620Z',
+  [Symbol(level)]: 'info' }
+{ message: 'rollback 3 success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:06:36.625Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1/HwpunyaxzneApM0zXkNW4pmcs6YxXGSCtcS4Z4A9fm9pRY84duSJ0HWmtbajD0UFPrguHf10iXyTboL0t9uGJKeAOYZF9fZvccqQSj39JF/f/v+svSuq9","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":54,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:07:04.741Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { jsonrpc: '2.0',
+     id: 42,
+     error: { code: -32000, message: 'invalid sender' } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:07:05.946Z',
+  [Symbol(level)]: 'info' }
+{ message: 'rollback 3 success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:07:05.950Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1/Nl8u5S7stknVFxCc07ZozLkA+h+oIeGlY7mxiqkR7Q+cUFB3peNvMGgOeoKTwglaLgr6QRXBA2/VBmot4yiJ66e/ogvIMXbV+x9VfOvXSa3r4LEDrn/iF","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":55,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:07:49.783Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { jsonrpc: '2.0',
+     id: 42,
+     error: { code: -32000, message: 'invalid sender' } },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:07:50.861Z',
+  [Symbol(level)]: 'info' }
+{ message: 'rollback 3 success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:07:50.862Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+1OamyV6BabJCQBv5cgswcZlZChIVn72GofKzOlKIvulpXxMZkyVpwehND5fXj8LN5lkHa1Nj9tyDS+pFy2LM2m7zqO4+/aQbL1EBnUTMV86Vag9tC4eoa","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":56,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:08:55.972Z',
+  [Symbol(level)]: 'info' }
+{ message: 'rollback 3 success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-17T08:08:56.965Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+j04qmav0OphCMWSzbiPHx1cTjkRo4fkZnpDN8vKf4i71jbIEmoppKMDKq+J5fTF7nDpQpXnwGJPhEbXBR+IkAm/3OIc1WELmMQVHS1ar0JirN5wOEKeoQ","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":57,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:43:50.815Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+iQkqgzjAjHeXwPnAPjnr0QGTUfY29SWKVxNxdbrb1YEMU9zK1a326cT/XXvEKAFVIXHvGj2h422rkrWtbydeKmCAV0lZ47HjWv80rH3Ddh/DTgaZFEW0/","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":58,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:45:51.351Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":".1","1":"HT","2":"U2FsdGVkX1+aLk+umbdW4uW/M2Iltm1501H1fM49qkjtNoqvxR9mD/85OH45mifSjxJTLOSv5wZIjwWDcFPkxt9DfD/BE0XHg9vm6kHLmHAJTjnEotfypiU7h1ItdaS3","3":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","4":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","5":true,"6":18,"7":{"id":59,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:46:39.482Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:46:40.796Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xf8a7eacca6533d33d66e121433062f5f00f01aa3e64e4d200793de2c612ca78d',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:46:40.796Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":4,"1":".1","2":"HT","3":"U2FsdGVkX1+cyZger0NxWZO3DqNDUlFk6bB/377VBPwc0iL19W2RxyyEUoR2Pe/FEUmPmXqGAVQuDtVau/CaBUlR32PCatR+xxUkNJDEwqNJ7NKKHgdez2t5LGH2Qnuw","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","6":true,"7":18,"8":{"id":60,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:55:27.767Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":4,"1":".1","2":"HT","3":"U2FsdGVkX18xvwGpLAmn1hYEFe1kgVX6QQOqaYcHKw6Xew9tUj6tZCIxZcHr9947l04zP2QLjpC/fIX9HozyfVgi4B9wOt2R+p4iBwsaNb7D705wTq+aUMsPQLTLG+qm","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xeD40c55baaA747b6B62886a05B81b8a6A8745E41","6":true,"7":18,"8":{"id":61,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:58:18.650Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:58:20.107Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x3e65434b47b6676e2f2d7d832ce488913e4fd0483c9817d832c29f47aa4fc0e0',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-20T07:58:20.108Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:44:45.683Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:50:10.071Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:51:54.634Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:52:22.700Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:54:29.624Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:54:46.951Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:57:42.642Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:58:17.225Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:58:37.878Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T01:59:43.545Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:01:30.494Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:04:40.671Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:04:55.474Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1/TfXDzZ6b8tsqipusGzG2yDv2HaIguy5C6K/YDtlVLbGOOzQF/QJPXwRNqJ2hTzqxoaHBfNOd4NidvhnwrBrsVFX9Wxhu3LXHlSLdVzypy5ycBpmMf6GO8","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":62,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:06:50.692Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:06:52.022Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x453798bd625e30a3ce04dab82a62dd80a57d35c53ccdcf37b2636a0b3d99d992',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:06:52.023Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1+jntwIMPQrIPHC8Uy84QzdyMEZZs20JZrOBpu9qS17oIW5wVdb9G7H2dVZASHxqcfswNL/IqcNm358UuIXPovetQ4NSYYhtgLpLViNkyErBbPGHWYztzBG","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":63,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:16:39.928Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:16:41.206Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x457aac801b8e85200c4c31089cdc9a2731518ab20af3c40e49c957b67ccec658',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:16:41.206Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1/CHZs8rw+W2K9KYdejTwV5ZjUd8UgCh4N87niYepErkz/HI7xH8ItZ9aQTMdNP3Z1PtnNuh/AAd5GzvnIA+3gGZpB1GVVYQ7KWPRZ81OmdtQT92osbQPNj","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":64,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:22:10.480Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:22:16.260Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xb0971a38bf7e60d7f104aa0df97bbb3ceca3e88e05ec14f834b8f837bcca820c',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:22:16.261Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX19IaCs+wndL97cWf56/hBfLuxj6OHl0UlECxL22ITWfMUw6yEbkTIvMVt9c1x6e4BGq2AC+zhfeIbMeCPGVr4Yx7XwE5cGy549QRnxWeBX854uyCmxqhxlL","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":65,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:40:40.727Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX19wq00rb2aq2+aRK5ChSqWJV/5cIiW6JRfbtLp7xvZLgDOzj1Ag/ZpeDj2GFth9PTR++lnfLKAR7vcPW4NT0/DM0+VlDml1altCUgzJlDYMAt0J/PtsMrkM","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":66,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:42:21.646Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xee6b2800',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:42:21.978Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:42:22.579Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xe9b6ad2a4c6132fe7728066b3ba343fd81a2bbc5f8c60389caa67d1f481ad506',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:42:22.579Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX19vR8BfKyqlqH+EzLFAgkhWAC4RjeCTdGQedOmoqdXyPcCqrRzEIJ5s8Sjrg6Puo5Ng0n6zq/yrv3XKFTBMmHcJw6BbC8SiiYAXVSDMYaSTQD2roT0jmV6D","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":67,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:06.543Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xee6b2800',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:06.825Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:07.448Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xc884159d7ef06c0b8368810b3eeafb75e51eff25f5feb15463d90252b44dc8ac',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:07.448Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1/GLzF1Xxr+CfeEf8ddykfw0pk8mGIAn/zWtzX/ILIbB1iAXghPcJ6whkfMQdXCFUaVrIFRvBN7D+/WsXpOCqbt0vhahiKk1XIw5ZvZFjsPlLysCDARN71Z","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":68,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:54.944Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xee6b2800',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:55.253Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:55.853Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xb93ecd3bdda436abfbca03a964747a0e8a1644fe97a44c32b15eb3ceae6ea15d',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:45:55.854Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1/QykwNlgQXtIrGp6y2z7NprG3dOfZfwyxbE5wrVs7cPvaC5baURO0CkMs+2NTqOJscbrUigkwnrDAfIgxXPUiD/1bjyX9nCf8F9TiX5Wq3WjHrfkTQyW1O","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":69,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:46:31.762Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xee6b2800',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:46:32.079Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:46:32.674Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xc638026017b81d7bc73ce2125d10fdcd69646def6ffd3e51fc2446e0a63f589f',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:46:32.674Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1/L0kKra2BBaTq9HNrgcvADB3KYvyWcxqlCcL4GA0sTTTTpceXKgpEgEiDqwvFvbJwMZhF2QRmCNpeG9uHng+sAm8XsU962VSvxlOnoXoMN/jsjgbkxgVX+","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":70,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:47:48.083Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xb43e9400',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:47:48.427Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:47:51.209Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x20136e60cfead69345ef308e5723867728c39e1bbeb2b3e5897e192cb2b102b2',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:47:51.210Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1+me8iNMNx7fyDgax8/IFEQX7OOzw6AGY4Rv+5gGDj71QeSRuovfwAdWfEWOOP4PplVz5SK9l+Y3e8zamqb7E/VZoqDXLBwbi5CWAOEFDnpd33WKthy1TUK","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":71,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:48:32.498Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x165a0bc00',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:48:32.842Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:48:33.535Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x42a69ad51e9d6d94084395018299fa100d5a5b50f9d91044abe4a6ea308e5554',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:48:33.535Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX19wkgxLzVpT2vgMnSutBY4J5NSyQjJV/wGzPXJmVa6ZeanAQi64hRPDEraPjBt3T9CNitk85bJE1LB4dKeID0djr1+g9qZC3bHW8axTeviSxqNvt9k+gl+c","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":72,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:49:28.491Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x165a0bc00',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:49:28.879Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:49:29.492Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xf123d917e2124be47047513e883b79a256d4caee91224d775f8fbdeda4bf42eb',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:49:29.492Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX187ilEwM4DeMVOfvUYmbFj6SwQalGWM7wITiKZXCqjL1H+iRDjEoWcZBr+r5YaKFiavVAwVIkruNmUW5XYSwIN67w4nX/ceryojRGT26L8K8zq0Z801xMxa","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":73,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:51:07.255Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x873a60b00',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:51:07.586Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:51:08.206Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xf310ce818b487655c54ab8b7a02b71c81fcfa615531c407e5f915b47bd65b61b',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T02:51:08.206Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX18vu69wmuLLAp55hYR0beKzkAlrLITup8tRvDjmlqFCx6kDWb+6I4WhkFisrERQOFwPCTwfO9XQuOBFmntGVdPccVZzxHcGQ8nN1L59LVZkbhskNltrMzCJ","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":74,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:05:33.459Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x104c533c00',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:05:33.793Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:05:34.402Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x75ec60297754a15151f8c7d10d9cf0ba92c09dac86ddf4b1585f199887d15d0b',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:05:34.402Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1/B27DTcK32XIVNHFqn07wNM173aqCHHx428fJ3WaDDvdtkTjgAvLl9A6yZ0RKx6jIToNhGNaZ8IZrOnmacD6hcxNYM5Xe2SjzbMRw64DcrSawHthO3ezi6","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":75,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:07:24.796Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x104c533c00',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:07:25.155Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:07:25.912Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x0e51b14771f38b85fd62239deb660674a0a110c024f808d75847b8e1611b0296',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:07:25.912Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1+xZYDqa0PDcyWqskaxi892/YqKtYIfu4rEOUu3GRmqJK1zzrW1gbwmgdj3pEz6gXURdFutDbE0YwKyVXxm2vHB9MiNG+sH2HAIAgxeYUbneFRl/eBHj+OJ","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":76,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:10:32.818Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xcaa7e200',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:10:33.178Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:10:33.809Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x56cbdf428275ad1f24d486158034f9e6ca22ec51471ceb7cd4b17ee4ad939b1f',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:10:33.810Z',
+  [Symbol(level)]: 'info' }
+{ message: '{"0":6,"1":"0.1","2":"HT","3":"U2FsdGVkX1/J0bPiuhj3BKGh4V7h6rq9BczrrYxMhWVXq/peSW3u7tDs9Zc2jIeF5WtbyFrbL0iX7/t/xt8Sk3O9sGsbtMSnS3Iuh2SIAfO1Q1nPqptoKIoV+OBVoylh","4":"0x857FB63d11Ea0400B69D706dAF4968d696E02b1b","5":"0xAFD131aB3D89ce17B1EC5236421f0C145C030192","6":true,"7":18,"8":{"id":77,"wallet":null,"currency":null,"token_type":null,"concerned_address":null,"amount":null,"merchant":null,"k_hash":null,"k_timestamp":null,"withdrawal_id":null,"extra":null}}',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:12:25.596Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x19254d3800',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:12:25.935Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:12:31.751Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x510c2d2b1a5f6ac1382f8043dd5d92784cdc587324563a7f84bffd48a214f0a5',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-22T03:12:31.751Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-23T04:38:28.433Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x19352a7f8',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T07:14:46.182Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T07:14:48.327Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x600151a0c043e4c8869a6939cb40d0aa1c5827de761c4e1150edd94f373fbae5',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T07:14:48.328Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x195806920',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T07:40:44.712Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T07:40:45.523Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x13790331420985180ebb719520fc53c76b2fbbc47dd09a799d12f87c41cfac1e',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T07:40:45.524Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x19bd577c0',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T08:09:49.837Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T08:09:50.473Z',
+  [Symbol(level)]: 'info' }
+{ message: '0xa47c22956adf2ed103b7107d3f194416dc20c70f5b080d19bf4a417feddd4fd5',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T08:09:50.473Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x269c033a0',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T09:49:39.883Z',
+  [Symbol(level)]: 'info' }
+{ message: 'hash',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T09:49:41.001Z',
+  [Symbol(level)]: 'info' }
+{ message: '0x3cc8b25392eea0893da0fbfb747863776cf227499d16b82ceef800b993de90c3',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T09:49:41.001Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T15:20:41.415Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-24T15:23:01.057Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T02:10:25.754Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus error.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T09:45:13.205Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { hash: '0x95c15008ee2a42afb266a9a44e407b7aacd3aa00ab8bd77b9c329d84c085e7ff' },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T09:45:13.208Z',
+  [Symbol(level)]: 'info' }
+{ message: 'update 6success',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T09:45:13.211Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T12:21:50.873Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus error.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T12:28:19.042Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { hash: '0x9bc5689245b674e4d4c05d4869e567b50bddda4c9acd270f7063106f1dbb540b' },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T12:28:19.043Z',
+  [Symbol(level)]: 'info' }
+{ message: 'update 7success',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T12:28:19.043Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-27T12:30:30.536Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus error.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T01:43:05.835Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { hash: '0xa7a29085c13aef60726cb7ad054e91ea86cea5aa0f6ad2dafbf66300921c27c9' },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T01:43:05.838Z',
+  [Symbol(level)]: 'info' }
+{ message: 'update 8success',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T01:43:05.839Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T01:44:02.385Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus error.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T02:30:05.885Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { hash: '0x676039d4f358c0bb4b846a209fc5ae4aa416986e083e96561ba9a538b9841ec5' },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T02:30:05.887Z',
+  [Symbol(level)]: 'info' }
+{ message: 'update 9success',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T02:30:05.888Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus success.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T02:31:01.629Z',
+  [Symbol(level)]: 'info' }
+{ message: 'updateWithdrawalStatus error.',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T02:41:08.829Z',
+  [Symbol(level)]: 'info' }
+{ message: 
+   { hash: '0x14558984f2a4e257a55611a3afee80f067b6aa7ed44b79e92b4e12aa83f797eb' },
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T02:41:08.830Z',
+  [Symbol(level)]: 'info' }
+{ message: 'update 10success',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-08-28T02:41:08.831Z',
+  [Symbol(level)]: 'info' }

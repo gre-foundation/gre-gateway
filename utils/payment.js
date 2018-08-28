@@ -147,8 +147,9 @@ PaymentUtils.prototype.getBTCBalance = function(address){
     })
 };
 
-PaymentUtils.prototype.getERC20Balance = function(address){
-    var contract = new ethers.Contract(config.erc20.contractAddress, abi, provider);
+PaymentUtils.prototype.getERC20Balance = function(address, type){
+    if(!config.constractAddresses[type]) throw new Error("Token is not exist.");
+    var contract = new ethers.Contract(config.constractAddresses[type], abi, provider);
     return contract.balanceOf(address)
 };
 

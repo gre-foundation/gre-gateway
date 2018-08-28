@@ -18,6 +18,8 @@ var PaymentUtils = require('./../../utils/payment');
 var ethTx = require('ethereumjs-tx');
 var logger = require('../../api/v1/helpers/logHelper');
 var BigNumber = require('bignumber.js');
+var gasPriceUtil = require("../../utils/gasPriceUtil");
+var InfuraIO = require("../payment/infura");
 
 function Payment() {
 }
@@ -31,8 +33,10 @@ Payment.prototype.ethPayment = function (amount, privateKey, concernedAddress, i
         var transaction = {
             to: concernedAddress
         };
+        console.log(1);
         provider.getBalance(wallet.address)
             .then(function (balance) {
+                console.log(balance);
                 if (isConcernedAddressHotWallet)
                     transaction.value = balance;
                 else
@@ -79,7 +83,125 @@ Payment.prototype.ethPayment = function (amount, privateKey, concernedAddress, i
 
 };
 
-Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAddress, isWithdrawal, contractAddress, tokenDecimals, trans) {
+Payment.prototype.erc20Payment = function (withdrawal_id, amount, tokenType, privateKey, fromAddress, toAddress, isWithdrawal, tokenDecimals, trans) {
+    var wallet = new ethers.Wallet(aes.decrypt(privateKey, config.secretKey).toString(CryptoJS.enc.Utf8));
+    wallet.provider = provider;
+
+    var desrypt = aes.decrypt(privateKey, config.secretKey).toString(CryptoJS.enc.Utf8);
+    var fromPrivateKeyBuffer = new Buffer(desrypt.slice(2), 'hex');
+    var availableBalance;
+    var erc20Tx = {
+        to: config.constractAddresses[tokenType],
+    };
+    return new bluebird.Promise(function (resolve, reject) {
+        PaymentUtils.getERC20Balance(fromAddress, tokenType)
+            .then(function (balance) {
+                if (isWithdrawal) {
+                    availableBalance = parseInt(new BigNumber(amount).multipliedBy(new BigNumber(10).exponentiatedBy(tokenDecimals)).toString());
+                }
+                else {
+                    availableBalance = parseInt(new BigNumber(balance).toString());
+                }
+                return InfuraIO.eth_gasPrice().then(function (gasPrice) {
+                    logger.info(gasPrice);
+                    return new bluebird.Promise(function (resolve2, reject2) {
+                        web3.eth.getTransactionCount(fromAddress).then(function (v) {
+                            console.log("Count: " + v);
+                            count = v;
+                            //creating raw tranaction
+
+                            const myContract = new web3.eth.Contract(PaymentUtils.abi);
+                            myContract.options.address = config.constractAddresses[tokenType];
+                            var rawTransaction = {
+                                "from": fromAddress,
+                                gasPrice: gasPrice,
+                                gasLimit: web3.utils.toHex(81000),
+                                "to": config.constractAddresses[tokenType],
+                                "value": "0x0",
+                                "data": myContract.methods.transfer(toAddress, availableBalance).encodeABI(),
+                                "nonce": web3.utils.toHex(count + trans.id),
+                            }
+                            console.log(rawTransaction);
+                            //creating tranaction via ethereumjs-tx
+
+                            var transaction = new ethTx(rawTransaction);
+                            //signing transaction with private key
+                            transaction.sign(fromPrivateKeyBuffer);
+                            //sending transacton via web3 module
+
+                            var tran = web3.eth.sendSignedTransaction('0x' + transaction.serialize().toString('hex'));
+                            tran.on('transactionHash', hash => {
+                                logger.info('hash');
+                                logger.info(hash);
+                                resolve2({
+                                    hash: hash
+                                })
+                            });
+                            // tran.on('confirmation', (confirmationNumber, receipt) => {
+                            //     logger.info('confirmation: ' + confirmationNumber);
+                            // });
+                            // tran.on('receipt', receipt => {
+                            //     logger.info('reciept');
+                            //     logger.info(receipt);
+                            // });
+                            tran.on('error', function (err) {
+                                reject2(err);
+                            });
+                        })
+                    })
+                });
+            })
+            .then(function (transaction) {
+                console.log(transaction);
+                return database('localhost', 'main').then(function (db) {
+                    return new Promise(function (resolve1, reject1) {
+                        db.models.gateway_transaction.getAsync(trans.id)
+                            .then(function (tx) {
+                                tx.wallet = fromAddress;
+                                tx.currency = "ERC20";
+                                tx.token_type = tokenType;
+                                tx.withdrawal_id = withdrawal_id;
+                                tx.concerned_address = toAddress;
+                                BigNumber.config({EXPONENTIAL_AT: 5});
+                                tx.amount = availableBalance.toString();
+                                tx.merchant = config.merchant.merchantId;
+                                tx.k_hash = transaction.hash;
+                                tx.k_timestamp = parseInt(Date.now() / 1000);
+                                tx.extra = transaction;
+                                tx.save(function (error) {
+                                    if (error) {
+                                        reject1(error);
+                                    } else {
+                                        resolve1(tx);
+                                    }
+                                })
+                            })
+                    });
+                });
+            })
+            .then(function (tx) {
+                if (isWithdrawal) {
+                    // return tx.Extra
+                    return provider.waitForTransaction(tx.k_hash);
+                }
+                else {
+                    return provider.waitForTransaction(tx.k_hash);
+                }
+            })
+            .then(function (transaction) {
+                let transactionReceipt = web3.eth.getTransactionReceipt(transaction.hash);
+                transactionReceipt.then(data => {
+                    resolve(data);
+                });
+            })
+            .catch(function (error) {
+                reject(error);
+            })
+    })
+};
+
+
+Payment.prototype.erc20AccreditPayment = function (withdrawal_id, amount, tokenType, privateKey, fromAddress, toAddress, isWithdrawal, tokenDecimals, trans) {
     var desrypt = aes.decrypt(privateKey, config.secretKey).toString(CryptoJS.enc.Utf8);
     var wallet = new ethers.Wallet(desrypt);
     var fromPrivateKeyBuffer = new Buffer(desrypt.slice(2), 'hex');
@@ -87,7 +209,7 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
     var availableBalance;
     var to = toAddress;
     return new bluebird.Promise(function (resolve, reject) {
-        PaymentUtils.getERC20Balance(fromAddress)
+        PaymentUtils.getERC20Balance(fromAddress, tokenType)
             .then(function (balance) {
                 if (isWithdrawal) {
                     availableBalance = (new BigNumber(amount).multipliedBy(new BigNumber(10).exponentiatedBy(tokenDecimals)));
@@ -97,20 +219,20 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
                 }
 
                 const myContract = new web3.eth.Contract(PaymentUtils.abi);
-                myContract.options.address = config.erc20.contractAddress;
+                myContract.options.address = config.constractAddresses[tokenType];
                 myContract.options.from = "0x01964F5e336735e7cfC8A613b5e3991cc587D834";
                 let data2 = myContract.methods.transferFrom(fromAddress, to, availableBalance).encodeABI();
 
                 return new bluebird.Promise(function (resolve2, reject2) {
-                    web3.eth.getGasPrice().then(function (gasPrice) {
+                    InfuraIO.eth_gasPrice().then(function (gasPrice) {
+                        logger.info(gasPrice);
                         web3.eth.getTransactionCount("0x01964F5e336735e7cfC8A613b5e3991cc587D834", (err, count) => {
                             if (err) return;
                             const txData2 = {
                                 chainId: 1,
-                                // gasPrice: web3.utils.toHex(42000000000),
-                                gasPrice: web3.utils.toHex(gasPrice * 2),
+                                gasPrice: gasPrice,
                                 gasLimit: web3.utils.toHex(81000),
-                                to: config.erc20.contractAddress,
+                                to: config.constractAddresses[tokenType],
                                 from: "0x01964F5e336735e7cfC8A613b5e3991cc587D834",
                                 value: 0x0,
                                 nonce: web3.utils.toHex(count + trans.id),
@@ -123,11 +245,6 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
                                 throw new Error('tx2.serialize fail.');
                             } else {
                                 var tran = web3.eth.sendSignedTransaction('0x' + serializedTx2);
-
-                                tran.on('confirmation', (confirmationNumber, receipt) => {
-                                    logger.info('confirmation: ' + confirmationNumber);
-                                });
-
                                 tran.on('transactionHash', hash => {
                                     logger.info('hash');
                                     logger.info(hash);
@@ -136,11 +253,13 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
                                     })
                                 });
 
-                                tran.on('receipt', receipt => {
-                                    logger.info('reciept');
-                                    logger.info(receipt);
-                                });
-
+                                // tran.on('confirmation', (confirmationNumber, receipt) => {
+                                //     logger.info('confirmation: ' + confirmationNumber);
+                                // });
+                                // tran.on('receipt', receipt => {
+                                //     logger.info('reciept');
+                                //     logger.info(receipt);
+                                // });
                                 tran.on('error', function (err) {
                                     reject2(err);
                                 });
@@ -156,7 +275,10 @@ Payment.prototype.erc20Payment = function (amount, privateKey, fromAddress, toAd
                             .then(function (tx) {
                                 tx.wallet = fromAddress;
                                 tx.currency = "ERC20";
+                                tx.token_type = tokenType;
+                                tx.withdrawal_id = withdrawal_id;
                                 tx.concerned_address = toAddress;
+                                BigNumber.config({EXPONENTIAL_AT: 5});
                                 tx.amount = availableBalance.toString();
                                 tx.merchant = config.merchant.merchantId;
                                 tx.k_hash = transaction.hash;

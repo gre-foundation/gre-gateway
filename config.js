@@ -1,4 +1,5 @@
 var env = process.env.NODE_ENV || 'development';
+var fs = require('fs');
 
 var config = {
     'development': {
@@ -47,7 +48,8 @@ var config = {
         'ethHotWalletKey': 'U2FsdGVkX1+XUwwYjzcdXtQtRQCkSQ8DZkCpScgdOk3O1udoWO5etYZHIuXWhrK9EA7VpER7SrmHRVZjV3fgi2++Xtwl56GKXs3OuEIEOM2t7tlaVFHmmhLCj9niRCvH',
         'ethPreviousBlock': 0,
         'erc20WithdrawalKey': '',  // 转存S3
-        'erc20WithdrawalWallet': '0xAFD131aB3D89ce17B1EC5236421f0C145C030192',
+        'RISKWithdrawalWallet': '0xAFD131aB3D89ce17B1EC5236421f0C145C030192',
+        'erc20WithdrawalWallet': '0x857FB63d11Ea0400B69D706dAF4968d696E02b1b',
         'web3Provider': 'http://13.124.179.153:8545',
         'ethersNetwork': require('ethers').providers.networks.ropsten
     },
@@ -90,18 +92,36 @@ var config = {
             'contractAddress': '0x4b04633ee658d83a24a91E3a1b244221800D89B4'
         },
         'erc20WithdrawalKey': process.env.ERC20_WITHDRAWAL_KEY || '', // 转存S3
-        'erc20WithdrawalWallet': process.env.ERC20_WITHDRAWAL_WALLET || '',
+        'RISKWithdrawalWallet': process.env.RISK_WITHDRAWAL_WALLET || '',
+        'erc20WithdrawalWallet': process.env.ERC20_WITHDRAWAL_WALLET,
         'btcColdWalletAddress': process.env.BTC_COLD_WALLET_ADDRESS || '',
         'ethColdWalletAddress': process.env.ETH_COLD_WALLET_ADDRESS || '',// required
         'btcHotWalletAddress': process.env.BTC_HOT_WALLET_ADDRESS || '',
         'btcHotWalletKey': process.env.BTC_HOT_WALLET_KEY || '',
         'ethHotWalletAddress': process.env.ETH_HOT_WALLET_ADDRESS || '',// required
         'ethHotWalletKey': process.env.ETH_HOT_WALLET_KEY, // 转存S3
-        'web3Provider': 'http://internal-gre-eth-lb-195930554.ap-northeast-2.elb.amazonaws.com:8545',
+        'web3Provider': 'http://13.124.179.153:8545',
         'ethersNetwork': require('ethers').providers.networks.homestead
     }
 };
 
 let config2 = config[env];
+
+
+var contractAddresses = {};
+let files = fs.readdirSync(__dirname + "/tokens/erc20");
+files.forEach(function (file) {
+    if (file.indexOf("json") !== -1)
+        var readFileSync = fs.readFileSync(__dirname + "/tokens/erc20/" + file, "utf8");
+
+    try {
+        let parse = JSON.parse(readFileSync);
+        if (parse.symbol) {
+            contractAddresses[parse.symbol] = parse.address;
+        }
+    } catch (e) {
+    }
+});
+config2.constractAddresses = contractAddresses;
 
 module.exports = config2;

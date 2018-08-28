@@ -45,6 +45,8 @@ namespace :deploy do
   task :restart do
     on roles(:all) do
       puts "restart app"
+
+     execute :mkdir, "-p", "#{shared_path}/node_modules"
       execute :ln, "-sf", "#{shared_path}/node_modules", "#{current_path}/node_modules"
 
       execute :mkdir, "-p", "#{shared_path}/logs"

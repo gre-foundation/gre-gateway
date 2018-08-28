@@ -9,6 +9,7 @@ module.exports = function (db, cb) {
         amount: String,
         k_timestamp: Number,
         status: Number,
+        token_type: String,
         withdrawal_address: String,
         withdrawal_success: Boolean,
         withdrawal_confirmation: Boolean,
@@ -44,11 +45,13 @@ module.exports = function (db, cb) {
         id: Number,
         wallet: String,
         currency: String,
+        token_type: String,
         concerned_address: String,
         amount: String,
         merchant: String,
         k_hash: String,
         k_timestamp: Number,
+        withdrawal_id: Number,
         extra: Object
     });
     return cb();

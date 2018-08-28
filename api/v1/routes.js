@@ -17,7 +17,7 @@ router.get('/invoice/status/:id', invoiceController.getInvoiceStatus);
 // balance checking routes
 router.get('/balance/btc/addr/:address', hotWalletController.btcBalance);
 router.get('/balance/eth/addr/:address', hotWalletController.ethBalance);
-router.get('/balance/erc20/addr/:address', hotWalletController.erc20Balance);
+router.get('/balance/erc20', hotWalletController.erc20Balance);
 
 // withdrawal routes
 router.post('/withdraw/btc', hotWalletController.btcWithdraw);
