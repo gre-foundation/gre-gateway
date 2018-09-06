@@ -16,14 +16,69 @@ let CryptoJS = require('crypto-js');
 let aes = require('crypto-js/aes');
 
 let database = require('../../db');
-
+let PaymentUtil = require('../../utils/payment');
+let abi = PaymentUtil.abi;
 let host = "https://mainnet.infura.io/v3/a2389719d28e4c6797f7b1adc9dde0b2";
 
 // let host = "https://api.myetherapi.com/eth";
 
 function InfuraIO() {
 }
+InfuraIO.prototype.eth_getBalance = function (address) {
+    return new bluebird.Promise(function (resole, reject) {
+        let options = {
+            url: host,
+            method: "POST",
+            body: {
+                "jsonrpc": "2.0", "id": 1, "method": "eth_getBalance", "params": [address, 'latest']
+            },
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            json: true,
+        };
+        rp(options)
+            .then(function (body) {
+                resole(new BigNumber(body.result).dividedBy(new BigNumber(10).exponentiatedBy(18)).toString());
+            })
+            .catch(function (error) {
+                reject(error);
+            });
+    });
+}
 
+InfuraIO.prototype.eth_getContractBalance = function (address, contractAddress) {
+    return new bluebird.Promise(function (resole, reject) {
+
+        const myContract = new web3.eth.Contract(PaymentUtils.abi);
+        var callData = myContract.methods.balanceOf(address).encodeABI();
+
+        let options = {
+            url: host,
+            method: "POST",
+            body: {
+                "jsonrpc": "2.0", "id": 1, "method": "eth_call", "params": [
+                    {
+                        "to": contractAddress,
+                        "data": callData
+                    },
+                    "latest"
+                ]
+            },
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            json: true,
+        };
+        rp(options)
+            .then(function (body) {
+                resole(new BigNumber(body.result).dividedBy(new BigNumber(10).exponentiatedBy(18)).toString());
+            })
+            .catch(function (error) {
+                reject(error);
+            });
+    })
+};
 
 InfuraIO.prototype.eth_gasPrice = function () {
     return new bluebird.Promise(function (resole, reject) {
@@ -43,30 +98,6 @@ InfuraIO.prototype.eth_gasPrice = function () {
                 let val = (new BigNumber(new web3.utils.BN(body.result).toString())).multipliedBy(2);
                 console.log(val.toString());
                 resole(web3.utils.toHex(val));
-            })
-            .catch(function (error) {
-                reject(error);
-            });
-    })
-};
-InfuraIO.prototype.eth_getBalance = function (address) {
-    return new bluebird.Promise(function (resole, reject) {
-        let options = {
-            url: host,
-            method: "POST",
-            body: {
-                "jsonrpc": "2.0", "id": 1, "method": "eth_getBalance", "params": [
-                    address, "latest"
-                ]
-            },
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            json: true,
-        };
-        rp(options)
-            .then(function (body) {
-                resole(body);
             })
             .catch(function (error) {
                 reject(error);
@@ -123,7 +154,8 @@ InfuraIO.prototype.eth_sendRawTransaction = function (withdrawal_id, amount, tok
                             "value": "0x0",
                             "data": myContract.methods.transfer(toAddress, availableBalance).encodeABI(),
                             "nonce": web3.utils.toHex(count),
-                        }
+                        };
+                        console.log(rawTransaction);
                         //creating tranaction via ethereumjs-tx
                         let transaction = new ethTx(rawTransaction);
                         //signing transaction with private key

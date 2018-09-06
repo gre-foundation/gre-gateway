@@ -2975,3 +2975,13 @@
   label: 'payment-gateway',
   timestamp: '2018-08-28T02:41:08.831Z',
   [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-09-04T08:54:32.469Z',
+  [Symbol(level)]: 'info' }
+{ message: 'server running at  3001',
+  level: 'info',
+  label: 'payment-gateway',
+  timestamp: '2018-09-04T08:56:05.853Z',
+  [Symbol(level)]: 'info' }

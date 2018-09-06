@@ -20,9 +20,9 @@ router.get('/balance/eth/addr/:address', hotWalletController.ethBalance);
 router.get('/balance/erc20', hotWalletController.erc20Balance);
 
 // withdrawal routes
-router.post('/withdraw/btc', hotWalletController.btcWithdraw);
-router.post('/withdraw/eth', hotWalletController.ethWithdraw);
-router.post('/withdraw/erc20', hotWalletController.erc20Withdraw);
+// router.post('/withdraw/btc', hotWalletController.btcWithdraw);
+// router.post('/withdraw/eth', hotWalletController.ethWithdraw);
+// router.post('/withdraw/erc20', hotWalletController.erc20Withdraw);
 
 // account routes
 router.post('/account/create', accountController.create);

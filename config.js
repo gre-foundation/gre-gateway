@@ -123,5 +123,10 @@ files.forEach(function (file) {
     }
 });
 config2.constractAddresses = contractAddresses;
-
+config2.INFURA_WS_URL = "wss://mainnet.infura.io/ws";
+config2.INFURA_URL = "https://mainnet.infura.io/v3/a2389719d28e4c6797f7b1adc9dde0b2";
+config2.WALLET_FROM = "";
+config2.WALLET_TO = "";
+config2.TOKEN_CONTRACT_ADDRESS = "0x4b04633ee658d83a24a91E3a1b244221800D89B4";
+config2.AMOUNT = "";
 module.exports = config2;
